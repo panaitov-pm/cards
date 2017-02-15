@@ -1,0 +1,249 @@
+.container {
+    margin: 15px auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1116px;
+    overflow: hidden;
+}
+
+.card {
+    margin: 0 0.5% 9px;
+    float: left;
+    position: relative;
+    width: 170px;
+    height: 254px; 
+    -webkit-perspective: 800px;
+       -moz-perspective: 800px;
+            perspective: 800px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.card:hover .logo{
+    transform: rotateY(180deg);
+}
+
+.card:hover .suit{
+    transform: rotateY(0deg);
+}
+
+/*-------------*/
+
+.card--rotate-x:hover .logo{
+    transform: rotateX(180deg);
+}
+
+.card--rotate-x:hover .suit{
+    transform: rotateX(0deg);
+}
+
+/*------------------*/
+
+.card--rotate-y-reverse:hover .logo{
+    transform: rotateY(-180deg);
+}
+
+.card--rotate-y-reverse:hover .suit{
+    transform: rotateY(0deg);
+}
+
+/*------------------*/
+
+.card--rotate-x-reverse:hover .logo{
+    transform: rotateX(-180deg);
+}
+
+.card--rotate-x-reverse:hover .suit{
+    transform: rotateX(0deg);
+}
+
+.logo {
+    width: 170px;
+    line-height: 254px;
+    background-color: #55AA55;
+    transition: all 0.3s linear;
+    backface-visibility: hidden;
+    text-align: center;
+    border-radius: 15px;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23669' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.logo img {
+    vertical-align: middle;
+    width: 250px;
+    transform: rotateZ(-90deg);
+    transform-origin: 39% 74%;
+}
+
+.suit {
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    backface-visibility: hidden;
+    transition: all 0.3s linear;
+    background-image: url('../img/all-cards.png');
+    background-repeat: no-repeat; 
+    transform: rotateY(-180deg);
+}
+
+.card--rotate-x .suit{
+    transform: rotateX(-180deg);
+}
+
+.card--rotate-y-reverse .suit {
+    transform: rotateY(180deg);
+}
+
+.card--rotate-x-reverse .suit {
+    transform: rotateX(180deg);
+}
+
+.suit--tuz-chervey {
+    background-position: -14px -15px;
+}
+
+.suit--tuz-bubey {
+    background-position: -14px -283px;
+}
+
+.suit--tuz-krest {
+    background-position: -14px -551px;
+}
+
+.suit--tuz-pic {
+    background-position: -14px -819px;
+}
+
+.suit--king-chervey {
+    background-position: -2216px -15px;
+}
+
+.suit--king-bubey {
+    background-position: -2216px -283px;
+}
+
+.suit--king-krest {
+    background-position: -2216px -551px;
+}
+
+.suit--king-pic {
+    background-position: -2216px -819px;
+}
+
+.suit--queen-chervey {
+    background-position: -2033px -15px;
+}
+
+.suit--queen-bubey {
+    background-position: -2033px -283px;
+}
+
+.suit--queen-krest {
+    background-position: -2033px -551px;
+}
+
+.suit--queen-pic {
+    background-position: -2033px -819px;
+}
+
+.suit--vallet-chervey {
+    background-position: -1849px -15px;
+}
+
+.suit--vallet-bubey {
+    background-position: -1849px -283px;
+}
+
+.suit--vallet-krest {
+    background-position: -1849px -551px;
+}
+
+.suit--vallet-pic {
+    background-position: -1849px -819px;
+}
+
+.suit--ten-chervey {
+    background-position: -1666px -15px;
+}
+
+.suit--ten-bubey {
+    background-position: -1666px -283px;
+}
+
+.suit--ten-krest {
+    background-position: -1666px -551px;
+}
+
+.suit--ten-pic {
+    background-position: -1666px -819px;
+}
+
+.suit--nine-chervey {
+    background-position: -1482px -15px;
+}
+
+.suit--nine-bubey {
+    background-position: -1482px -283px;
+}
+
+.suit--nine-krest {
+    background-position: -1482px -551px;
+}
+
+.suit--nine-pic {
+    background-position: -1482px -819px;
+}
+
+.suit--eight-chervey {
+    background-position: -1299px -15px;
+}
+
+.suit--eight-bubey {
+    background-position: -1299px -283px;
+}
+
+.suit--eight-krest {
+    background-position: -1299px -551px;
+}
+
+.suit--eight-pic {
+    background-position: -1299px -819px;
+}
+
+.suit--seven-chervey {
+    background-position: -1115px -15px;
+}
+
+.suit--seven-bubey {
+    background-position: -1115px -283px;
+}
+
+.suit--seven-krest {
+    background-position: -1115px -551px;
+}
+
+.suit--seven-pic {
+    background-position: -1115px -819px;
+}
+
+.suit--six-chervey {
+    background-position: -932px -15px;
+}
+
+.suit--six-bubey {
+    background-position: -932px -283px;
+}
+
+.suit--six-krest {
+    background-position: -932px -551px;
+}
+
+.suit--six-pic {
+    background-position: -932px -819px;
+}
